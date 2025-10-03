@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1d2b64, #f8cdda);
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      margin: 30px 0;
+      font-size: 2.5em;
+      color: #00ff9d;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .course-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      width: 220px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      backdrop-filter: blur(6px);
+    }
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .course-title {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #ffde59;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Available Courses</h1>
+  <div class="courses">
+    <div class="course-card"><p class="course-title">BCA (Bachelor of Computer Application)</p></div>
+    <div class="course-card"><p class="course-title">MCA (Master of Computer Application)</p></div>
+    <div class="course-card"><p class="course-title">BBA (Bachelor of Business Administration)</p></div>
+    <div class="course-card"><p class="course-title">B.Sc (Bachelor of Science)</p></div>
+    <div class="course-card"><p class="course-title">B.Tech (Bachelor of Technology)</p></div>
+  </div>
+
+</body>
+</html>

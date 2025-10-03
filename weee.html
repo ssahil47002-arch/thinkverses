@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkVerse</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, rgba(10,10,30,0.95), rgba(0,0,50,0.9)),
+                  url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-size: cover;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background: rgba(0, 0, 30, 0.8);
+      padding-top: 60px;
+      backdrop-filter: blur(6px);
+    }
+    .sidebar a {
+      display: block;
+      padding: 15px 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      background: #00c6ff;
+      color: black;
+      border-radius: 8px;
+    }
+
+    /* Hero Section */
+    .hero {
+      margin-left: 200px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #00c6ff;
+      text-shadow: 0 0 15px #00c6ff;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      color: #f5f5f5;
+    }
+
+    /* Glow Animation */
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00c6ff; }
+      to { text-shadow: 0 0 25px #00c6ff, 0 0 40px #00c6ff; }
+    }
+
+    /* Features Section */
+    .features {
+      margin-left: 200px;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #00c6ff;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0, 198, 255, 0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0, 198, 255, 0.6);
+    }
+    .card i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #00c6ff;
+    }
+
+    /* Footer */
+    footer {
+      margin-left: 200px;
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,30,0.8);
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    .socials i {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #00c6ff;
+      transition: 0.3s;
+    }
+    .socials i:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Menu -->
+  <div class="sidebar">
+    <a href=C:\Users\MY\Desktop\ThinkVerse\course.html><i class="fas fa-book"></i>Course</a>
+    <a href=C:\Users\MY\Desktop\ThinkVerse\Enrollment form.html><i class="fas fa-pen"></i>Enroll Now</a>
+    <a href=C:\Users\MY\Desktop\ThinkVerse\moredetails.html><i class="fas fa-info-circle"></i>More Details</a>
+    <a href=C:\Users\MY\Desktop\ThinkVerse\Features.html><i class="fas fa-star"></i>Features</a>
+    <a href=C:\Users\MY\Desktop\ThinkVerse\Team.html><i class="fas fa-users"></i>Team</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>ThinkVerse</h1>
+    <p>Make your future Bright and Secure</p>
+      </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Our Key Features</h2>
+    <div class="cards">
+      <div class="card"><i class="fas fa-lock"></i><h3>Secure Learning</h3><p>Your data is fully protected with AI security.</p></div>
+      <div class="card"><i class="fas fa-lightbulb"></i><h3>Smart Courses</h3><p>AI-curated courses for skill development.</p></div>
+      <div class="card"><i class="fas fa-headset"></i><h3>24/7 Support</h3><p>Instant help and mentorship anytime.</p></div>
+    </div>
+     <h1>Thinkverse - Smart Emergency Mode</h1>
+  <p>If you ever feel stressed or in danger, press the button below:</p>
+  <button onclick="openModal()">🚨 Emergency Mode</button>
+
+  <!-- Modal -->
+  <div id="emergencyModal" class="modal">
+    <div class="modal-content">
+      <h2>🚨 Emergency Mode Activated!</h2>
+      <p>Please choose an option:</p>
+      <button onclick="alert('📞 Connecting to Teacher/Support...')">Contact Teacher</button>
+      <button onclick="alert('👨‍👩‍👦 Notifying Emergency Contact...')">Notify Parents</button>
+      <button onclick="alert('☕ Take a short break! Relax for 5 minutes.')">Suggest Break</button>
+      <br><br>
+      <button onclick="closeModal()" style="background-color: #999;">Close</button>
+    </div>
+  </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ThinkVerse Project | Created by Team Hackoops</p>
+    <p>Created by: <b>Palak Yaduvanshi</b> & <b>Sahil Sahrama</b></p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
